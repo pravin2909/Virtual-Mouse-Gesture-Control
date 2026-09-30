@@ -30,7 +30,7 @@ Virtual-Mouse-Gesture-Control/
         ├── geometry.py           # Landmark distance / finger-state helpers
         ├── mouse_controller.py   # Cursor movement & click actions
         ├── gestures.py           # Gesture recognition logic
-        └── app.py                # Capture loop & entry point
+        └── app.py                # Capture loop 
 ```
 
 ## Installation
