@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "virtual-mouse-gesture-control"
+version = "1.0.0"
+description = "Control your computer's mouse using hand gestures via a webcam."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Pravin Selvaraj" }]
+keywords = ["gesture-control", "computer-vision", "mediapipe", "opencv", "virtual-mouse"]
+dependencies = [
+    "opencv-python>=4.8.0",
+    "mediapipe==0.10.21",
+    "pyautogui>=0.9.54",
+    "pynput>=1.7.6",
+    "numpy>=1.24,<2.0",
+]
+
+[project.scripts]
+virtual-mouse = "virtual_mouse.app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
